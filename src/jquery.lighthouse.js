@@ -1,3 +1,11 @@
+/*
+ * jQuery Lighthouse 0.1
+ * https://github.com/LeinardoSmith/lighthouse
+ *
+ * Copyright LeinardoSmith
+ * Released under the MIT license.
+ */
+
 // Set the default config for the plugin
 jQuery.fn.lighthouse.config = {
 containerSelector: '.lighthouse',
