@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lighthouse Demo</title>
+        <link rel="stylesheet" href="lighthouse.css" />
+    </head>
+    <body>
+        <section>
+            <article>
+                <span class="lighthouse image">
+                    <a href="900x600.gif"><img src="300x200.gif" /></a>
+                    <span class="caption">
+                        Just an Image
+                    </span>
+                </span>
+
+                <span class="lighthouse html">
+                    <a href="#thumbnail-link"><img class="thumbnail" src="150x150.gif" /></a>
+                    <span class="caption">
+                        HTML Content
+                    </span>
+                    <div class="content">
+                        <a href="#fullsize-link"><img src="600x400.gif" /></a>
+                        <span class="caption">
+                            HTML Content
+                        </span>
+                        <div class="features">
+                            <h1>Title Tag 1</h1>
+                            <h2>Title Tag 2</h2>
+                            <h3>Title Tag 3</h3>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                            </ul>
+                        </div>
+                        <div>
+                            Excepteur esse aute expetendis cillum, nescius illum quibusdam. Veniam ex
+                            nescius. Et velit se labore, e malis instituendarum, ad est ipsum cillum velit
+                            de ex arbitror familiaritatem. Quo mandaremus ut officia. Irure in pariatur et
+                            cillum. Do incurreret sed doctrina. Cillum ingeniis proident.
+                        </div>
+                        <span>Quorum vidisse an quorum esse eu consequat quae minim hic amet.</span>
+                        <a href="#content-link">Content Link</a>
+                    </div>
+                </span>
+            </article>
+        </section>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="jquery.lighthouse.js"></script>
+        <script>
+            $('.lighthouse').lighthouse();
+        </script>
+    </body>
+</html>
