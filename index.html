@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Lighthouse : A simple jquery plugin to expand and adapt content" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Lighthouse</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/LeinardoSmith/lighthouse">View on GitHub</a>
+
+          <h1 id="project_title">Lighthouse</h1>
+          <h2 id="project_tagline">A simple jquery plugin to expand and adapt content</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/LeinardoSmith/lighthouse/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/LeinardoSmith/lighthouse/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="lighthouse" class="anchor" href="#lighthouse"><span class="octicon octicon-link"></span></a>Lighthouse</h3>
+
+<p>Lighthouse is a simple jquery plugin that allows content to expand or adapt to the user's needs. It is very basic and simple in order to allow maximum compatibility and customizability. Feel free to fork and suggest changes.</p>
+
+<h2>
+<a name="three-steps" class="anchor" href="#three-steps"><span class="octicon octicon-link"></span></a>Three steps!</h2>
+
+<p><strong>Sample HTML</strong></p>
+
+<pre><code>&lt;span class="lighthouse image"&gt;
+    &lt;a href="full_image.jpg"&gt;&lt;img src="small_image.jpg" /&gt;&lt;/a&gt;
+    &lt;span class="caption"&gt;
+        Caption
+    &lt;/span&gt;
+&lt;/span&gt;
+</code></pre>
+
+<p><strong>Add the css</strong></p>
+
+<pre><code>&lt;link rel="stylesheet" href="jquery.lighthouse.css" /&gt;
+</code></pre>
+
+<p><strong>Add the script (after jquery and jqueryui are loaded)</strong></p>
+
+<pre><code>&lt;script src="jquery.lighthouse.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p><strong>Use it!</strong></p>
+
+<pre><code>&lt;script&gt;
+   $('.lighthouse').lighthouse();
+&lt;/script&gt;
+</code></pre>
+
+<h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<p>Lighthouse supports setting custom options in the following syntax:</p>
+
+<pre><code>$('.lighthouse').lighthouse({
+   option1: 'value1',
+   option2: 'value2'
+});
+</code></pre>
+
+<h3>
+<a name="defaults" class="anchor" href="#defaults"><span class="octicon octicon-link"></span></a>Defaults</h3>
+
+<p><strong>How to find the container</strong></p>
+
+<pre><code>containerSelector: '.lighthouse'
+</code></pre>
+
+<p><strong>How to find the thumbnail anchor</strong></p>
+
+<pre><code>anchorSelector: 'a'
+</code></pre>
+
+<p><strong>How to find the thumbnail</strong></p>
+
+<pre><code>imageSelector: 'img'
+</code></pre>
+
+<p><strong>How to find the child container (not needed if contentType is image)</strong></p>
+
+<pre><code>childSelector: '.content'
+</code></pre>
+
+<p><strong>How to find the child anchor (not needed if contentType is image)</strong></p>
+
+<pre><code>childAnchorSelector: 'a'
+</code></pre>
+
+<p><strong>How to find the child image (not needed if contentType is image)</strong></p>
+
+<pre><code>childImageSelector: 'img'
+</code></pre>
+
+<p><strong>What the class of the close anchor will be</strong></p>
+
+<pre><code>closeSelector: '.close'
+</code></pre>
+
+<p><strong>What the class of the background div will be</strong></p>
+
+<pre><code>backgroundSelector: '.background'
+</code></pre>
+
+<p><strong>Sets both the open and close duration</strong></p>
+
+<pre><code>duration: 350
+</code></pre>
+
+<p><strong>Sets how long the open animation lasts</strong></p>
+
+<pre><code>openDuration: null
+</code></pre>
+
+<p><strong>Sets how long the close animation lasts</strong></p>
+
+<pre><code>closeDuration: null
+</code></pre>
+
+<p><strong>Sets how long any other animation lasts (background/close button/content fade in/out)</strong></p>
+
+<pre><code>secondaryDuration: 200
+</code></pre>
+
+<p><strong>What type of content determines whether or not a child div named content will be created (ie if it is an image then a special div will be created)</strong></p>
+
+<pre><code>contentType: 'image'
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Lighthouse maintained by <a href="https://github.com/LeinardoSmith">LeinardoSmith</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
