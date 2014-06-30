@@ -1,0 +1,29 @@
+{
+	"name": "jquery.lighthouse",
+	"title": "jQuery Lighthouse",
+	"description": "A simple jquery plugin to expand and adapt content like a lightbox.",
+	"keywords": [
+		"plugin",
+		"lightbox",
+		"images",
+		"zoom",
+		"ui"
+	],
+	"version": "0.1",
+	"author": {
+		"name": "LeinardoSmith",
+		"email": "leinardosmith95@gmail.com",
+		"url": "http://weaverdesign.x10.bz"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/LeinardoSmith/lighthouse/blob/master/LICENSE"
+		}
+	],
+	"bugs": "https://github.com/LeinardoSmith/lighthouse/issues",
+	"docs": "https://github.com/LeinardoSmith/lighthouse/blob/master/README.md",
+	"dependencies": {
+		"jquery": ">=2.1",
+		"ui": ">=1.10"
+	}
